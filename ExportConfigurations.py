@@ -295,7 +295,7 @@ class ExportConfigurationsHandler(adsk.core.CommandEventHandler):
             dlgResult = folderDlg.showDialog()
             if dlgResult == adsk.core.DialogResults.DialogOK:
                 selectedFolder = folderDlg.folder
-                ui.messageBox(f'Selected folder:\n{selectedFolder}')
+                # ui.messageBox(f'Selected folder:\n{selectedFolder}')
 
                 # Use selectedFolder for exporting files
                 selectedSetups = []
