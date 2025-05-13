@@ -104,11 +104,6 @@ def getPostProcessor(post_name: str):
     posts = postQuery.execute()
     return posts[0] if len(posts) > 0 else None
 
-import adsk.core, adsk.fusion, adsk.cam, traceback
-
-app = adsk.core.Application.get()
-ui = app.userInterface
-
 def exportSetup(setup: adsk.cam.Setup, programName: str, folder: str):
     try:
         cam = adsk.cam.CAM.cast(app.activeProduct)
